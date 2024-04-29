@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <!--Link Styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body style="background-color: black; font-size: clamp(40px 27px 3px);">
+    <!--Nav-->
+    <header class="container w-100 h-20 ">
+        <nav class="navbar navbar-dark bg-dark w-100  h-100 ">
+            <div class="container h-100 w-100 ">
+                    <a href="#AboutMe" class="underline navbar-brand">About me</a>
+                    <a href="#Contact" class="underline navbar-brand">Contact</a>
+                    <a href="#Contact" class="underline navbar-brand">Other Future</a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="BtnSearch" class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!--Text resuming me-->
+    <section class="ResumeMe container d-flex h-50 justify-content-between p-4 position-relative   ">
+        <!--Text resume me-->
+        <div class="d-flex flex-column ">
+            <div class="d-flex flex-md-row gap-2  align-items-center ">
+                <p class="text-light text-center ">I'M</p>
+                <h2 class="m-0 text-center text-light">Samuel Cordoba</h2>
+            </div>
+
+            <div>
+                <p class="text-light p-0 mb-3">Fullstack developer</p>
+                <p class="ColorSpanInfoMe p-0 mb-3">Always learning about
+                    new paradigms and technologies 
+                    <br>
+                    to apply right solutions in the right place.</p>
+                <a href="" class="ButtonResumeMe">Contact Me</a>
+            </div>
+        </div>
+        <!--Img beside of me-->
+        <div class="MyImg container position-absolute ">
+            <img src="./ImgProjects/Me.png" style="height: 300px; width:400px ;" alt="Me Photo">
+        </div>
+        <!--Zone icons Resume Me-->
+        <div class="d-flex flex-column h-100 justify-content-end   ">
+            <!--Icon of LINKEDIN-->
+            <a href="https://www.linkedin.com/in/samuel-córdoba-henao-15a8362b9/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                    <path d="M8 11l0 5" />
+                    <path d="M8 8l0 .01" />
+                    <path d="M12 16l0 -5" />
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                </svg>
+            </a>
+            <!--Icon of INSTAGRAM-->
+            <a href="https://www.instagram.com/scorhenao/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                </svg>
+            </a>    
+
+            <!--Icon of GITHUB-->
+            <a href="https://github.com/Scorhenao">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!--Text that info my self-->
+    <section class="TextInfoMe container h-20 w-100 d-flex flex-column p-4 ">
+        <div>
+            <h3 id="AboutMe" class="text-light ">About Me</h3>
+        </div>
+        <div class="d-flex flex-column gap-4">
+            <div id="RowSpace">
+
+            </div>
+
+            <div class="d-flex flex-column gap-1 justify-content-center align-items-center ">
+                <p class="text-light ">Hi, I'm Samuel Cordoba, a passionate and dedicated <span class="ColorSpanInfoMe">developer</span> with a strong interest in <span class="ColorSpanInfoMe">backend development.</span> With a solid foundation in several skills in the world of programing, I'm always looking for opportunities to grow and learn.
+
+                    <span class="ColorSpanInfoMe">Feel free to explore my projects, and let's connect to discuss how we can collaborate to create something amazing!</span>
+                    </p>
+
+                    <p class="text-light ">As a easygoing guy I consider my self appropriated to go beyond in the word of the new tecnologies, I'm driven by a desire to move forward with my desires, my goals and my family. My passion for the backend has led me to create different projects. I'm excited to share my skills and experiences with you through this portfolio.
+                    </p>
+                    <p></p>
+
+                    <a class="ButtonResumeMe w-25 text-center" href="./moreAboutMe.html">See More</a>
+        </div>
+
+    </section>
+
+    <!--Content of my skills-->
+    <section class="MySkills container h-75 w-100 p-4 d-flex flex-column  gap-2 text-center">
+        <h2 class="text-light ">My Skills</h2>
+        <main class="d-grid h-100  w-100 gap-1">
+            <div class="row-1">
+                <!--Icon of PYTHON-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="BoxStylesSkills icon" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#BF9816" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 9h-7a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3"></path>
+                        <path d="M12 15h7a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-3"></path>
+                        <path d="M8 9v-4a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-4a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4"></path>
+                        <path d="M11 6l0 .01"></path>
+                        <path d="M13 18l0 .01"></path>
+                    </svg>
+                </a>
+
+                <!--Icon of CSS-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="BoxStylesSkills icon" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+                        <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
+                    </svg>
+                </a>
+
+                <!--Icon of HTML5-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="BoxStylesSkills icon icon-tabler icon-tabler-brand-html5" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4500" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+                        <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5"></path>
+                    </svg>
+                </a>
+
+                <!--Icon of PHP-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="BoxStylesSkills icon icon-tabler icon-tabler-brand-php" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3674d1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 12m-10 0a10 9 0 1 0 20 0a10 9 0 1 0 -20 0"></path>
+                        <path d="M5.5 15l.395 -1.974l.605 -3.026h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1 -.986 .836h-1.653"></path>
+                        <path d="M15.5 15l.395 -1.974l.605 -3.026h1.32a1 1 0 0 1 .986 1.164l-.167 1a1 1 0 0 1 -.986 .836h-1.653"></path>
+                        <path d="M12 7.5l-1 5.5"></path>
+                        <path d="M11.6 10h2.4l-.5 3"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="row-1">
+                <!--Icon of LARAVEL-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="BoxStylesSkills icon icon-tabler icon-tabler-brand-javascript" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 17l8 5l7 -4v-8l-4 -2.5l4 -2.5l4 2.5v4l-11 6.5l-4 -2.5v-7.5l-4 -2.5z" />
+                        <path d="M11 18v4" />
+                        <path d="M7 15.5l7 -4" />
+                        <path d="M14 7.5v4" />
+                        <path d="M14 11.5l4 2.5" />
+                        <path d="M11 13v-7.5l-4 -2.5l-4 2.5" />
+                        <path d="M7 8l4 -2.5" />
+                        <path d="M18 10l4 -2.5" />
+                    </svg>
+                </a>
+
+                <!--Icon of JAVASCRIPT-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="BoxStylesSkills icon icon-tabler icon-tabler-brand-javascript" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0DB4F" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M7.5 8h3v8l-2 -1" />
+                    <path
+                        d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                    </svg>
+                </a>
+
+                <!--Icon of SQL-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="BoxStylesSkills icon icon-tabler icon-tabler-brand-javascript" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M13 21c-1.427 -1.026 -3.59 -3.854 -4 -6c-.486 .77 -1.501 2 -2 2c-1.499 -.888 -.574 -3.973 0 -6c-1.596 -1.433 -2.468 -2.458 -2.5 -4c-3.35 -3.44 -.444 -5.27 2.5 -3h1c8.482 .5 6.421 8.07 9 11.5c2.295 .522 3.665 2.254 5 3.5c-2.086 -.2 -2.784 -.344 -3.5 0c.478 1.64 2.123 2.2 3.5 3" />
+                        <path d="M9 7h.01" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="row-1">
+                <!--Icon of BOOTSTRAP-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="BoxStylesSkills icon" width="100" height="100"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6417c3" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M2 12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2" />
+                    <path d="M2 12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2" />
+                    <path d="M9 16v-8h3.5a2 2 0 1 1 0 4h-3.5h4a2 2 0 1 1 0 4h-4z" />
+                </svg>
+                </a>
+
+                <!--Icon of GIT-->
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="BoxStylesSkills icon" width="100" height="100"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#e26030" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M16 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M12 15v-6" />
+                    <path d="M15 11l-2 -2" />
+                    <path d="M11 7l-1.9 -1.9" />
+                    <path
+                        d="M13.446 2.6l7.955 7.954a2.045 2.045 0 0 1 0 2.892l-7.955 7.955a2.045 2.045 0 0 1 -2.892 0l-7.955 -7.955a2.045 2.045 0 0 1 0 -2.892l7.955 -7.955a2.045 2.045 0 0 1 2.892 0z" />
+                </svg>
+                </a>
+            </div>
+
+            <div>
+
+            </div>
+        </main>
+    </section>
+
+    <!--Content of my proyects-->
+    <section class="MyProjects container h-50 w-100 p-4 d-flex flex-column text-center">
+        <h2 class="text-light ">My Projects</h2>
+
+                <div class="ContentProjects d-grid row-1 col-2 w-100 h-100 gap-5">
+                    <div class="Poject">
+                        <img id="imgInst" src="./ImgProjects/CloneInstagramP.JPG" alt="img instagram project">
+                        <span class="TextProject">
+                            <h3 class="text-dark ">Instagram clone</h3>
+                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe amet aliquid, minus unde laborum!</p>
+                            <a class="ButtonsProjects" href="#">See more</a>
+                        </span>
+                        <!--background img with hover-->
+                        <div class="BackInfoInstaP text-dark"></div>
+                    </div>
+
+                    <div class="SpotifyP Poject">
+                        <img id="imgInst" src="./ImgProjects/CloneInstagramP.JPG" alt="img instagram project">
+                        <span class="TextProject">
+                            <h3 class="text-dark ">Instagram clone</h3>
+                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe amet aliquid, minus unde laborum!</p>
+                            <a class="ButtonsProjects" href="#">See more</a>
+                        </span>
+                        <!--background img with hover-->
+                        <div class="BackInfoInstaP text-dark"></div>
+                    </div>
+                </div>
+                
+        <a id="ButtonViewMoreP" href="#">View more </a>
+    </section>
+
+    <!--Content of my experience-->
+    <section class="MyExperience container h-75  w-100 p-5 d-flex flex-column">
+        <h2 class="text-light">Experience</h2>
+        <main class="ContentExperience d-flex flex-column w-100 h-100">
+            <!--First part of text-->
+            <div class="d-flex flex-row w-100 h-50 mt-5">
+                <!--Decoration line left-->
+                <div class="position-relative w-auto h-100%">
+                    <!--Year-->
+                    <div class="year">2021</div>
+                    <!--Circle-->
+                    <div class="CircleExp"></div>
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    
+                </div>
+                <!--Text experience-->
+                <div>
+                    <h4 class="text-light ">Full Stack developer</h4>
+                    <h6 class="text-light">Sena</h6>
+    
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi sequi rerum, natus recusandae sit dicta non, libero hic provident aut porro atque in, blanditiis tempore est dolor vero ut.</p>
+                </div>
+            </div>
+            <!--Second part of text-->
+            <div class="d-flex flex-row w-100 h-50 mt-5">
+                <!--Decoration line left-->
+                <div class="position-relative w-auto h-100%">
+                    <!--Year-->
+                    <div class="year">2022</div>
+                    <!--Circle-->
+                    <div class="CircleExp"></div>
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    
+                </div>
+                <!--Text experience-->
+                <div>
+                    <h4 class="text-light ">Full Stack developer</h4>
+    
+                    <h6 class="text-light">Riwi</h6>
+    
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi sequi rerum, natus recusandae sit dicta non, libero hic provident aut porro atque in, blanditiis tempore est dolor vero ut.</p>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <footer class="container h-50 w-100 p-0 d-flex flex-column text-center">
+        <h2 id="Contact" class=" text-light">Contact Me</h2>
+        <main class="MainContactMe d-grid w-100  h-75 p-4  mb-3">
+            <!--Main contac-->
+            <div class="d-grid flex-column w-100 justify-content-center ">
+                <div class="d-flex gap-2 ">
+                    <!--Img of email-->
+                    <div class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                        <path d="M3 7l9 6l9 -6" />
+                    </svg></div>
+                    <div class="text-light d-flex align-items-center" >samcorhenao@gmail.com</div>
+                </div>
+
+                <div class="d-flex gap-2 ">
+                    <!--Img of phone-->
+                    <div class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg"  width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                    </svg></div>
+                    <div class="text-light d-flex align-items-center ">+57-311-336-9669</div>
+                </div>
+
+                <div class="d-flex gap-2 ">
+                    <!--Img of ubication-->
+                    <div class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                    </svg></div>
+                    <div class="text-light d-flex align-items-center">Medellin, Colombia</div>
+                </div>
+            </div>
+
+            <!--Icons Redes-->
+            <div class="ContentRedes d-flex justify-content-end w-100">
+                <div><a href="https://www.instagram.com/scorhenao/">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M16.5 7.5l0 .01" />
+                    </svg>
+                </a>    </div>
+
+                <div><a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                    <path d="M8 11l0 5" />
+                    <path d="M8 8l0 .01" />
+                    <path d="M12 16l0 -5" />
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                </svg></a></div>
+
+                <div><a href=""><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                </svg></a></div>
+            </div>
+        </main>
+
+        <!--Part below-->
+        <div class="ContentThx mb-3">
+            <p class="text-light">"Thanks for see my portfolio"</p>
+            <cite class="text-light">@2024 copyright</cite>
+        </div>
+    </footer>
+    
+
+    <!--Link Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

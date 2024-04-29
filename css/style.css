@@ -1,0 +1,286 @@
+/*General configs*/
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: clamp(1px 2px 3px);
+}
+
+.icon:hover{
+    background-color: #ecbb66c6;
+    border-radius: 10px;
+
+}
+
+section{
+    border-left: solid 1px #ecba66;
+    border-right: solid 1px #ecba66; 
+}
+/*nav bar*/
+header {
+    background-color: #34353a;
+    width: 100%;
+    border-left: solid 1px #ecba66;
+    border-right: solid 1px #ecba66;
+}
+/*animacion de linea inferior*/
+.underline::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #ecba66;
+    display: block;
+    transition:700ms;
+
+}
+    .underline:hover::after{
+        width: 100%;
+    }
+
+#BtnSearch{
+    background-color: #ecba66;
+    color: #000000;
+    border: 1px solid #000000;
+    color: white;
+}
+
+#BtnSearch:hover{
+    background-color: #ecbb66af;
+    color: white;
+}
+/*Resume me*/
+.ResumeMe {
+    background-color: #34353a;
+}
+
+.MyImg {
+    position: relative;
+    left: 40%;
+    top: 2%;
+    opacity: 0.7;
+}
+
+.ButtonResumeMe {
+    text-decoration: none;
+    color: #ecba66;
+    padding: 5px;
+    border-radius: 8px;
+    border: solid 2px #ecba66;
+}
+
+
+.ButtonResumeMe:hover{
+    background-color: #0000003c;
+    color: white;
+    transform: scale(1);
+    transition-duration: 200ms;
+
+    .ButtonResumeMe:hover{
+    background-color: orange;
+    color: #000000;
+
+    }
+}
+
+/*InfoMe*/
+.TextInfoMe{
+    background-color: #34353a;
+}
+#RowSpace{
+    width: 200px;
+    height: 3px;
+    background-color: #ecba66;
+}
+
+.ColorSpanInfoMe{
+    color: #ecba66;
+    font-size: small;
+
+}
+
+.BtnSeeMore{
+    color: #000000;
+    text-decoration: none;
+    padding: 5px;
+    background-color:#ecba66;
+    border-radius: 40px;
+}
+
+.BtnSeeMore:hover{
+    background-color: orange;
+    color: #000000;
+}
+
+/*MySkills*/
+.MySkills{
+    background-color: #34353a;
+}
+
+.BoxStylesSkills{
+    background-color: #3d3e42;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*My projects*/
+.MyProjects{
+    background-color: #34353a;
+    position: relative;
+
+}
+
+.Poject{
+    position: relative;
+    border:solid #ecba66;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.TextProject{
+    display: none;
+}
+
+.Poject #imgInst{
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.Poject:hover{
+    .BackInfoInstaP{
+        position: absolute;
+        background-color: #0000008e;
+        left: 0%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 10px;
+        
+    }
+    .TextProject{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 0%;
+        top: 30%;
+        width:clamp(100px 300px 500px);
+        height: clamp(500px 100px 900px);
+        background-color: #ecba66;
+        border-radius: 82px 30px 82px 30px;
+        z-index: 1;
+    }
+
+}
+
+.ButtonsProjects{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border: solid 2px #000000;
+    background-color: #34353aae;
+}
+
+.ButtonsProjects:hover{
+    background-color: #000000;
+    color: white;
+}
+
+#ButtonViewMoreP{
+    background-color: #ecba66;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color:black;
+    text-decoration: none;
+    align-self: center;
+
+}
+
+#ButtonViewMoreP:hover{
+    background-color: #0000008e;
+    color: white;
+}
+
+.SpotifyP{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+/*Que los projectos se pongan uno encima de otro*/
+@media (width < 992px){
+    .SpotifyP{
+        grid-row: 2;
+        grid-column: 1;
+    }
+}
+/*My Experience*/
+
+.MyExperience{
+    background-color: #34353a;
+    position: relative;
+}
+
+.MyExperience h2{
+    position: absolute;
+
+}
+
+.ContentExperience{
+    background-color: #3d3e42;
+    border-radius: 10px;
+
+}
+
+.CircleExp{
+    width: 25px;
+    height: 25px;
+    background-color: #ecba66;
+    clip-path: circle(50%);
+    box-shadow: 100px 100px 100px #4f9;
+}
+
+.year{
+    position: absolute;
+    background-color: gray;
+    border-radius: 10px 50px 50px 10px;
+    color: white;
+    padding: 3px;
+    left: -45px;
+
+}
+
+.AjustHr{
+    color: white;
+    background-color: white;
+    transform: rotate(90deg);
+    padding: 0;
+    margin-top: 19px;
+    width: 25px;
+}
+
+/*Contact me*/
+footer{
+    background-color:#34353a;
+    border-left:solid 1px #ecba66;
+    border-right:solid 1px #ecba66;
+    border-bottom:solid 1px #ecba66;
+}
+
+.MainContactMe{
+    background-color:#3d3e42;
+
+    border-top:solid 1px #ecba66;
+    border-bottom:solid 1px #ecba66;
+}
+
