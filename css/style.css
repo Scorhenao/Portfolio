@@ -120,6 +120,59 @@ header {
     color: #000000;
 }
 
+.button{
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    width: fit-content;
+    display: block;
+    font-size: 16px;
+    color: #aebdd5;
+    position: relative;
+    z-index: 10;
+    filter: contrast(150%);
+    padding: 5px;
+}
+
+.button a{
+    position: absolute;
+    left: 0;
+    top: 8%;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+
+.button a:hover{
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    color: white;
+    height: 100%;
+    background-color: #ecba66;
+    z-index: -1;
+    transition: 1.5s;
+    border-radius: 9px;
+
+}
+
+.button:hover .overlay{
+    width: 100%;
+    color: white;
+}
+
+
 /*MySkills*/
 .MySkills{
     background-color: #34353a;
