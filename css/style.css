@@ -100,11 +100,6 @@ header {
 .TextInfoMe{
     background-color: #34353a;
 }
-#RowSpace{
-    width: 200px;
-    height: 3px;
-    background-color: #ecba66;
-}
 
 .ColorSpanInfoMe{
     color: #ecba66;
@@ -148,17 +143,22 @@ header {
     border:solid #ecba66;
     border-radius: 10px;
     width: 100%;
+    min-height: 300px;
+    height: 500px;
+    max-height: 600px;
+
 }
 
 .TextProject{
     display: none;
 }
 
-.Poject #imgInst{
+.imgProjects{
     border-radius: 6px;
     width: 100%;
     height: 100%;
     opacity: 0.7;
+
 }
 
 .Poject:hover{
@@ -178,10 +178,11 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        left: 0%;
+        justify-content: center;
+        left: 5%;
         top: 30%;
-        width:clamp(100px 300px 500px);
-        height: clamp(500px 100px 900px);
+        width:90%;
+        height: 50%;
         background-color: #ecba66;
         border-radius: 82px 30px 82px 30px;
         z-index: 1;
@@ -309,9 +310,7 @@ footer{
         width: 250px;
         height: 240px;
     }
-    .ButtonResumeMe{
 
-    }
 }
 
 @media (width < 524px){
@@ -320,3 +319,8 @@ footer{
     }
 }
 
+@media (width < 465px){
+        .TextProject{
+            font-size: 15px;
+        }
+}
