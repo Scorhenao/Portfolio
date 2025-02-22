@@ -44,7 +44,6 @@ header {
     background-color: #ecba66;
     color: #000000;
     border: 1px solid #000000;
-    color: white;
 }
 
 #BtnSearch:hover{
@@ -103,7 +102,7 @@ header {
 
 .ColorSpanInfoMe{
     color: #ecba66;
-    font-size: small;
+    font-size: normal;
 
 }
 
