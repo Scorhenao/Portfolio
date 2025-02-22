@@ -10,15 +10,19 @@
     <!--Link Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Link js  -->
+    <script src="js/Bubbles.js"></script>
 </head>
 
 <body style="background-color: black; font-size: clamp(40px 27px 3px);">
+
     <!--Nav-->
     <header class="container w-100 h-20 ">
         <nav class="navbar navbar-dark bg-dark w-100  h-100 ">
             <div class="container h-100 w-100 ">
                     <a href="#AboutMe" class="underline navbar-brand">About me</a>
                     <a href="#Contact" class="underline navbar-brand">Contact</a>
+                    <a href="#Skills" class="underline navbar-brand">Skills</a>
                     <a href="#Contact" class="underline navbar-brand">Other Soon...</a>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -103,7 +107,7 @@
         </div>
         <div class="d-flex flex-column gap-4 ">
             <div class="d-flex flex-column gap-1 align-items-center  ">
-                <p class="text-light ">Hi, I'm Samuel Cordoba, a passionate and dedicated <span class="ColorSpanInfoMe">developer</span> with a strong interest in <span class="ColorSpanInfoMe">backend development.</span> With a solid foundation in several skills in the world of programmings, I'm always looking for opportunities to grow and learn.
+                <p class="text-light ">Hi, I'm Samuel Cordoba, a passionate and dedicated <span class="ColorSpanInfoMe">developer</span> with a strong interest in <span class="ColorSpanInfoMe">fullstack development.</span> With a solid foundation in several skills in the world of programmings, I'm always looking for opportunities to grow and learn.
 
                     <span class="ColorSpanInfoMe">Feel free to explore my projects, and let's connect to discuss how we can collaborate to create something amazing!</span>
                     </p>
@@ -117,8 +121,8 @@
         </div>
     </section>
 
-    <!--Content of my web skills-->
-    <section class="MySkills container h-75 w-100 p-4 d-flex flex-column  gap-2 text-center">
+    <!--Content of my skills-->
+    <section id="Skills" class="MySkills container h-75 w-100 p-4 d-flex flex-column  gap-2 text-center">
         <h2 class="text-light ">My backend Skills</h2>
         <!-- Backend -->
         <main class="d-grid h-100  w-100 gap-1">
@@ -163,7 +167,7 @@
 
                 <!-- Icon of DJANGO -->
                 <a href="https://www.djangoproject.com/">
-                <svg  xmlns="http://www.w3.org/2000/svg" class="BoxStylesSkills "  width="100"  height="100"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-django"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 3m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" /><path d="M12 7v8.5l-2.015 .201a2.715 2.715 0 1 1 0 -5.402l2.015 .201" /><path d="M16 7v.01" /><path d="M16 10v5.586c0 .905 -.36 1.774 -1 2.414" /></svg>
+                <svg  xmlns="http://www.w3.org/2000/svg" class="BoxStylesSkills icon"  width="100"  height="100"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-django"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 3m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" /><path d="M12 7v8.5l-2.015 .201a2.715 2.715 0 1 1 0 -5.402l2.015 .201" /><path d="M16 7v.01" /><path d="M16 10v5.586c0 .905 -.36 1.774 -1 2.414" /></svg>
                 </a>
 
             </div>
@@ -405,7 +409,7 @@
                         <img class="imgProjects" src="./ImgProjects/CloneInstagramP.JPG" alt="img instagram project">
                         <span class="TextProject">
                             <h3 class="text-dark ">Instagram clone</h3>
-                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe amet aliquid, minus unde laborum!</p>
+                            <p class="text-dark">this is a responsive clone of the main page on the instagram web</p>
                             <a class="ButtonsProjects" href="https://github.com/Scorhenao/CloneInstagram">See more</a>
                         </span>
                         <!--background img with hover-->
@@ -416,7 +420,31 @@
                         <img class="imgProjects" src="./ImgProjects/TiposFormulariosHtml.JPG" alt="img html forms project">
                         <span class="TextProject">
                             <h3 class="text-dark ">Types of forms HTML</h3>
-                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe amet aliquid, minus unde laborum!</p>
+                            <p class="text-dark">This is a simple web with HTML with the types of forms</p>
+                            <a class="ButtonsProjects" href="https://scorhenao.github.io/forms-HTML5/">See more</a>
+                        </span>
+                        <!--background img with hover-->
+                        <div class="BackInfoInstaP text-dark"></div>
+                    </div>
+                </div>
+
+                <div class="ContentProjects mt-5 d-grid row-1 col-2 w-100 h-100 gap-5">
+                    <div class="Poject">
+                        <img class="imgProjects" src="./ImgProjects/calculatorBusiness.png" alt="img instagram project">
+                        <span class="TextProject">
+                            <h3 class="text-dark ">Calculator business</h3>
+                            <p class="text-dark">this was a landing page exercise for a firm of lawyers, it needed to be done in 2 hours</p>
+                            <a class="ButtonsProjects" href="https://github.com/Scorhenao/PruebaJackMaHtmlAndCSS_Samuel_Cordoba_Henao">See more</a>
+                        </span>
+                        <!--background img with hover-->
+                        <div class="BackInfoInstaP text-dark"></div>
+                    </div>
+
+                    <div class="Poject2">
+                        <img class="imgProjects" src="./ImgProjects/TiposFormulariosHtml.JPG" alt="img html forms project">
+                        <span class="TextProject">
+                            <h3 class="text-dark ">Types of forms HTML</h3>
+                            <p class="text-dark">This is a simple web with HTML with the types of forms</p>
                             <a class="ButtonsProjects" href="https://scorhenao.github.io/forms-HTML5/">See more</a>
                         </span>
                         <!--background img with hover-->
@@ -513,6 +541,34 @@
         <a id="ButtonViewMoreP" href="https://github.com/Scorhenao?tab=repositories">View more </a>
     </section>
 
+    <!-- Other exercises -->
+    <section class="OtherExercises container h-50 w-100 p-4 d-flex flex-column text-center">
+        <h2 class="text-light">Other Exercises</h2>
+        <div class="ContentProjects d-grid row-1 col-2 w-100 h-100 gap-5">
+            <div class="Poject">
+                <img class="imgProjects" src="./ImgProjects/HospitalMongo.png" alt="img instagram project">
+                <span class="TextProject">
+                    <h3 class="text-dark ">Hospital DB</h3>
+                    <p class="text-dark">In this project i worked with shell and mongoDB to create a database to a hospital</p>
+                    <a class="ButtonsProjects" href="https://github.com/Scorhenao/Base-Datos-MONGO-HOSPITAL/tree/main">See more</a>
+                </span>
+                <!--background img with hover-->
+                <div class="BackInfoInstaP text-dark"></div>
+            </div>
+
+            <div class="Poject2">
+                <img class="imgProjects" src="./ImgProjects/HospitalSql.png" alt="img html forms project">
+                <span class="TextProject">
+                    <h3 class="text-dark ">Hospital DB</h3>
+                    <p class="text-dark">This project was based in a hospital near to my house, basically is a db with SQL that implement: <span class="text-danger">ACID, DML, DDL, DCL and DCL</span> exercises with normalization and a model diagram</p>
+                    <a class="ButtonsProjects" href="https://github.com/Scorhenao/Base-Datos-SQL-HOSPITAL?tab=readme-ov-file">See more</a>
+                </span>
+                <!--background img with hover-->
+                <div class="BackInfoInstaP text-dark"></div>
+            </div>
+        </div>
+    </section>
+
     <footer class="container h-50 w-100 p-0 d-flex flex-column text-center">
         <h2 id="Contact" class=" text-light">Contact Me</h2>
         <main class="MainContactMe d-grid w-100  h-75 p-4  mb-3">
@@ -585,7 +641,8 @@
         </div>
     </footer>
     
-    
+    <div class="bubble-background"></div>
+
 
     <!--Link Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

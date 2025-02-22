@@ -9,6 +9,42 @@ body {
     font-size: clamp(1px 2px 3px);
 }
 
+ /* Bubbles container */
+.bubble-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+    z-index: 3;
+    background: radial-gradient(circle, rgba(216, 13, 13, 0.1) 10%, rgba(138, 5, 5, 0) 80%);
+    pointer-events: none;
+}
+
+/* Style of bubbles */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ECBA66;
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+    animation: floatBubble linear infinite;
+    z-index: 4;
+}
+
+/* Animation to move the bubbles */
+@keyframes floatBubble {
+    from {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0.1;
+    }
+    to {
+        transform: translateY(-10vh) scale(1);
+        opacity: 0;
+    }
+}
+
 .icon:hover{
     background-color: #ecbb66c6;
     border-radius: 10px;
@@ -26,7 +62,7 @@ header {
     border-left: solid 1px #ecba66;
     border-right: solid 1px #ecba66;
 }
-/*animacion de linea inferior*/
+/*Animation underline*/
 .underline::after{
     content: "";
     height: 2px;
@@ -383,13 +419,13 @@ footer{
 }
 
 @media (width < 992px){
-    /*Que los projectos se pongan uno encima de otro*/
+    /*put the project one above the other*/
     .Poject2{
         grid-row: 2;
         grid-column: 1;
     }
 
-    /*Que la imagen del nav mia se acomode*/
+    /*move the image of me*/
     .MyImg{
         width: 350px;
         height: 200px;
