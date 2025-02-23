@@ -29,15 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
         "icon-tabler-brand-materialize": "Materialize: A modern responsive front-end framework based on Material Design.",
         "icon-tabler-brand-nodejs": "Node.js: JavaScript runtime for backend.",
         "icon-tabler-brand-postman": "Postman: API testing tool.",
+        "icon-tabler-brand-thunderclient": "Thunder Client: Lightweight API testing tool for VS Code.",
         "icon-tabler-brand-npm": "NPM: JavaScript package manager.",
+        "icon-tabler-brand-yarn": "Yarn: Fast and reliable JavaScript package manager.",
         "icon-tabler-brand-docker": "Docker: Containerization platform.",
         "icon-tabler-brand-ubuntu": "Ubuntu: Linux-based operating system.",
+        "icon-tabler-brand-linux": "Linux: Open-source operating system used for servers, development, and more.",
         "icon-tabler-brand-vscode": "VS Code: Popular code editor.",
         "icon-tabler-brand-discord": "Discord: Communication platform for communities.",
-        "icon-tabler-brand-linux": "Linux: Open-source operating system used for servers, development, and more.",
-        "icon-tabler-brand-jira": "Jira: Project management tool.",
-        "icon-tabler-brand-thunderclient": "Thunder Client: Lightweight API testing tool for VS Code.",
-        "icon-tabler-brand-yarn": "Yarn: Fast and reliable JavaScript package manager."
+        "icon-tabler-brand-jira": "Jira: Project management tool."
     };
 
     icons.forEach(icon => {
@@ -46,25 +46,27 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!skillName) return;
 
             descriptionBox.textContent = descriptions[skillName];
-            
+
             const rect = icon.getBoundingClientRect();
             const tooltipWidth = descriptionBox.offsetWidth;
             const tooltipHeight = descriptionBox.offsetHeight;
             const viewportWidth = window.innerWidth;
             const viewportHeight = window.innerHeight;
+            const scrollY = window.scrollY; // Consider scroll position
+            const scrollX = window.scrollX;
 
-            let leftPosition = rect.right + 10; // Default position to the right
-            let topPosition = rect.top + (rect.height / 3) - (tooltipHeight / 2); // Centered vertically
+            let leftPosition = rect.right + 10 + scrollX; // Default position to the right
+            let topPosition = rect.top + scrollY + (rect.height / 2) - (tooltipHeight / 2); // Centered vertically
 
-            // If the tooltip would go off the right edge of the screen, move it to the left
-            if (leftPosition + tooltipWidth > viewportWidth) {
-                leftPosition = rect.left - tooltipWidth - 10;
+            // If tooltip goes off the right screen, move it to the left
+            if (leftPosition + tooltipWidth > viewportWidth + scrollX) {
+                leftPosition = rect.left - tooltipWidth - 10 + scrollX;
             }
 
-            // Ensure the tooltip does not go off the top or bottom
-            if (topPosition < 20) topPosition = 20;
-            if (topPosition + tooltipHeight > viewportHeight) {
-                topPosition = viewportHeight - tooltipHeight - 10;
+            // Ensure tooltip is not off-screen vertically
+            if (topPosition < scrollY + 10) topPosition = scrollY + 10;
+            if (topPosition + tooltipHeight > viewportHeight + scrollY) {
+                topPosition = viewportHeight + scrollY - tooltipHeight - 10;
             }
 
             descriptionBox.style.left = `${leftPosition}px`;
