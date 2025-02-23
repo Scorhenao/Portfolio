@@ -48,8 +48,8 @@ body {
 .icon:hover{
     background-color: #ecbb66c6;
     border-radius: 10px;
-
 }
+
 
 section{
     border-left: solid 1px #ecba66;
@@ -217,6 +217,21 @@ header {
     background-color: #3d3e42;
     border-radius: 10px;
     padding: 10px;
+}
+
+/* Description Box (Initially Hidden) */
+.skill-description {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
 }
 
 /*My projects*/
