@@ -13,6 +13,7 @@
     <!--Link js  -->
     <script src="js/Bubbles.js"></script>
     <script src="js/skillDescription.js"></script>
+    <script src="js/showSections.js"></script>
 </head>
 
 <body style="background-color: black; font-size: clamp(40px 27px 3px);">
@@ -126,7 +127,7 @@
     <section id="Skills" class="MySkills container h-75 w-100 p-4 d-flex flex-column  gap-2 text-center">
         <h2 class="text-light ">My backend Skills</h2>
         <!-- Backend -->
-        <main class="d-grid h-100  w-100 gap-1">
+        <main class="hidden-section d-grid h-100  w-100 gap-1">
 
             
             <div class="row-1">
@@ -207,7 +208,7 @@
 
         <!-- Data -->
         <h2 class="text-light ">My data Skills</h2>
-        <main class="d-grid h-100  w-100 gap-1">
+        <main class="hidden-section d-grid h-100  w-100 gap-1">
             <div class="row-1">
                 <!--Icon of MYSQL-->
                 <a href="https://www.mysql.com">
@@ -262,7 +263,7 @@
 
         <!-- Frontend -->
         <h2 class="text-light ">My front Skills</h2>
-        <main class="d-grid h-100  w-100 gap-1">
+        <main class="hidden-section d-grid h-100  w-100 gap-1">
             <div class="row-1">
                 <!--Icon of HTML5-->
                 <a href="https://developer.mozilla.org/es/docs/Web/HTML">
@@ -336,7 +337,7 @@
 
         <!-- Others -->
         <h2 class="text-light ">My additional Skills</h2>
-        <main class="d-grid h-100  w-100 gap-1">
+        <main class="hidden-section d-grid h-100  w-100 gap-1">
             <div class="row-1">
                 <!-- Icon of DISCORD -->
                 <a href="https://discord.com/">
@@ -402,7 +403,7 @@
     </section>
 
     <!--Content of my web projects-->
-    <section class="MyProjects container h-50 w-100 p-4 d-flex flex-column text-center">
+    <section class="MyProjects hidden-section container h-50 w-100 p-4 d-flex flex-column text-center">
         <h2 class="text-light ">My Web Projects</h2>
 
                 <div class="ContentProjects d-grid row-1 col-2 w-100 h-100 gap-5">
@@ -457,7 +458,7 @@
     </section>
 
     <!--Content of my experience-->
-    <section class="MyExperience container h-75  w-100 p-5 d-flex flex-column">
+    <section class="MyExperience hidden-section container h-75  w-100 p-5 d-flex flex-column">
         <h2 class="text-light">Experience</h2>
         <main class="ContentExperience d-flex flex-column w-100 h-100">
             <!--First part of text-->
@@ -512,16 +513,133 @@
 
 
     <!-- Content of my mobile projects -->
-    <section class="MyProjects container h-50 w-100 p-4 d-flex flex-column text-center">
+    <section class="MyProjects hidden-section container h-50 w-100 p-4 d-flex flex-column text-center">
         <h2 class="text-light ">My Mobile Projects</h2>
 
                 <div class="ContentProjects d-grid row-1 col-2 w-100 h-100 gap-5">
                     <div class="Poject">
                         <img class="imgProjects" src="./ImgProjects/CloneInstagramP.JPG" alt="img instagram project">
                         <span class="TextProject">
-                            <h3 class="text-dark ">Instagram clone</h3>
-                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe amet aliquid, minus unde laborum!</p>
-                            <a class="ButtonsProjects" href="https://github.com/Scorhenao/CloneInstagram">See more</a>
+                            <h3 class="text-dark ">SmartHabitManager</h3>
+                            <p class="text-dark">An app with React Native to manage all ur habit, with notifications and more...</p>
+                            <a class="ButtonsProjects" href="https://github.com/Scorhenao/SmartHabitManager">See more</a>
+                            <a class="ButtonsProjects" href="https://github.com/Scorhenao/YieldsUrShopping">Download</a>
+                        </span>
+                        <!--background img with hover-->
+                        <div class="BackInfoInstaP text-dark"></div>
+                    </div>
+
+                    <div class="Poject2">
+                        <img class="imgProjects" style="width: 70%; height: 100%" src="./ImgProjects/YieldsUrShopping.jpeg" alt="img html forms project">
+                        <span class="TextProject">
+                            <h3 class="text-dark ">YieldsUrShopping</h3>
+                            <p class="text-dark">developed in React Native to manage shopping lists.CRUD shopping lists, as well mark items as purchased. The application supports dark mode and has a welcome screen at startup.</p>
+                            <div class="d-flex">
+                                <a class="ButtonsProjects" href="https://github.com/Scorhenao/YieldsUrShopping">See more</a>
+                                <a class="ButtonsProjects" href="https://github.com/Scorhenao/YieldsUrShopping">Download</a>
+                            </div>
+                        </span>
+                        <!--background img with hover-->
+                        <div class="BackInfoInstaP text-dark"></div>
+                    </div>
+                </div>
+
+                <div class="ContentProjects d-grid row-1 col-2 w-100 h-100 gap-5">
+                    <div class="Poject">
+                        <img class="imgProjects" src="./ImgProjects/CloneInstagramP.JPG" alt="img instagram project">
+                        <span class="TextProject">
+                            <h3 class="text-dark ">FinanCore</h3>
+                            <p class="text-dark">An app with React Native to manage all ur money, budgets, cost and incomes</p>
+                            <a class="ButtonsProjects" href="https://github.com/Scorhenao/finanCoreAndroid">See more</a>
+                            <a class="ButtonsProjects" href="https://github.com/Scorhenao/finanCoreAndroid">Download</a>
+                        </span>
+                        <!--background img with hover-->
+                        <div class="BackInfoInstaP text-dark"></div>
+                    </div>
+
+                    <div class="Poject2">
+                        <img class="imgProjects" src="./ImgProjects/TiposFormulariosHtml.JPG" alt="img html forms project">
+                        <span class="TextProject">
+                            <h3 class="text-dark ">CloseToYou</h3>
+                            <p class="text-dark">developed in React Native to manage your contacts and their locations.</p>
+                            <div class="d-flex">
+                                <a class="ButtonsProjects" href="https://github.com/Scorhenao/PractiqueReact">See more</a>
+                                <a class="ButtonsProjects" href="https://github.com/Scorhenao/YieldsUrShopping">Download</a>
+                            </div>
+                        </span>
+                        <!--background img with hover-->
+                        <div class="BackInfoInstaP text-dark"></div>
+                    </div>
+                </div>
+                
+        <a id="ButtonViewMoreP" href="https://github.com/Scorhenao?tab=repositories">View more </a>
+    </section>
+
+    <!--Content of my mobile experience-->
+    <section class="MyExperience hidden-section container h-75  w-100 p-5 d-flex flex-column">
+        <h2 class="text-light">Mobile Experience</h2>
+        <main class="ContentExperience d-flex flex-column w-100 h-100">
+            <!--First part of text-->
+            <div class="d-flex flex-row w-100 h-50 mt-5">
+                <!--Decoration line left-->
+                <div class="position-relative w-auto h-100% m-lg-2">
+                    <!--Year-->
+                    <div class="year">2021</div>
+                    <!--Circle-->
+                    <div class="CircleExp"></div>
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    
+                </div>
+                <!--Text experience-->
+                <div class="p-1">
+                    <h4 class="text-light ">Full Stack developer</h4>
+                    <h6 class="text-light">Sena</h6>
+    
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi sequi rerum, natus recusandae sit dicta non, libero hic provident aut porro atque in, blanditiis tempore est dolor vero ut.</p>
+                </div>
+            </div>
+            <!--Second part of text-->
+            <div class="d-flex flex-row w-100 h-50 mt-5 ">
+                <!--Decoration line left-->
+                <div class="position-relative w-auto h-100% m-lg-2">
+                    <!--Year-->
+                    <div class="year">2022</div>
+                    <!--Circle-->
+                    <div class="CircleExp"></div>
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    
+                </div>
+                <!--Text experience-->
+                <div class="p-1">
+                    <h4 class="text-light ">Full Stack developer</h4>
+    
+                    <h6 class="text-light">Riwi</h6>
+    
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi sequi rerum, natus recusandae sit dicta non, libero hic provident aut porro atque in, blanditiis tempore est dolor vero ut.</p>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- Content of my backend projects -->
+    <section class="MyProjects hidden-section container h-50 w-100 p-4 d-flex flex-column text-center">
+        <h2 class="text-light ">My Mobile Projects</h2>
+
+                <div class="ContentProjects d-grid row-1 col-2 w-100 h-100 gap-5">
+                    <div class="Poject">
+                        <img class="imgProjects" src="./ImgProjects/CloneInstagramP.JPG" alt="img instagram project">
+                        <span class="TextProject">
+                            <h3 class="text-dark ">SmartHabitManager</h3>
+                            <p class="text-dark">An app to manage all ur habit, with notifications and more...</p>
+                            <a class="ButtonsProjects" href="https://github.com/Scorhenao/SmartHabitManager">See more</a>
                         </span>
                         <!--background img with hover-->
                         <div class="BackInfoInstaP text-dark"></div>
@@ -542,8 +660,64 @@
         <a id="ButtonViewMoreP" href="https://github.com/Scorhenao?tab=repositories">View more </a>
     </section>
 
+    <!--Content of my backend experience-->
+    <section class="MyExperience hidden-section container h-75  w-100 p-5 d-flex flex-column">
+        <h2 class="text-light">Mobile Experience</h2>
+        <main class="ContentExperience d-flex flex-column w-100 h-100">
+            <!--First part of text-->
+            <div class="d-flex flex-row w-100 h-50 mt-5">
+                <!--Decoration line left-->
+                <div class="position-relative w-auto h-100% m-lg-2">
+                    <!--Year-->
+                    <div class="year">2021</div>
+                    <!--Circle-->
+                    <div class="CircleExp"></div>
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    
+                </div>
+                <!--Text experience-->
+                <div class="p-1">
+                    <h4 class="text-light ">Full Stack developer</h4>
+                    <h6 class="text-light">Sena</h6>
+    
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi sequi rerum, natus recusandae sit dicta non, libero hic provident aut porro atque in, blanditiis tempore est dolor vero ut.</p>
+                </div>
+            </div>
+            <!--Second part of text-->
+            <div class="d-flex flex-row w-100 h-50 mt-5 ">
+                <!--Decoration line left-->
+                <div class="position-relative w-auto h-100% m-lg-2">
+                    <!--Year-->
+                    <div class="year">2022</div>
+                    <!--Circle-->
+                    <div class="CircleExp"></div>
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    <hr class="AjustHr">
+                    
+                </div>
+                <!--Text experience-->
+                <div class="p-1">
+                    <h4 class="text-light ">Full Stack developer</h4>
+    
+                    <h6 class="text-light">Riwi</h6>
+    
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi sequi rerum, natus recusandae sit dicta non, libero hic provident aut porro atque in, blanditiis tempore est dolor vero ut.</p>
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+
     <!-- Other exercises -->
-    <section class="OtherExercises container h-50 w-100 p-4 d-flex flex-column text-center">
+    <section class="OtherExercises hidden-section container h-50 w-100 p-4 d-flex flex-column text-center">
         <h2 class="text-light">Other Exercises</h2>
         <div class="ContentProjects d-grid row-1 col-2 w-100 h-100 gap-5">
             <div class="Poject">
@@ -570,7 +744,7 @@
         </div>
     </section>
 
-    <footer class="container h-50 w-100 p-0 d-flex flex-column text-center">
+    <footer class="container hidden-section h-50 w-100 p-0 d-flex flex-column text-center">
         <h2 id="Contact" class=" text-light">Contact Me</h2>
         <main class="MainContactMe d-grid w-100  h-75 p-4  mb-3">
             <!--Main contact-->
